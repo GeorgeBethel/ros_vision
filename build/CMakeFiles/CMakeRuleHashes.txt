@@ -1,0 +1,15 @@
+# Hashes of file build rules.
+5ab1a782432ecc56aa8191ec106ffa7d /home/george/ros_vision/devel/include/vision2_ros/detection.h
+15ca6785cacf54643f6c7c1fbb2ca21e /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/__init__.py
+a6506278f31d38ddc445f037d524eb21 /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/_detection.py
+d0dd53e8f50f981ebe6be51584414b87 /home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg/detection.lisp
+010d8f641718eba42a55c17cc3bf0501 /home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg/detection.js
+dabd97c22a1fba9850626027b0994944 /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/manifest.l
+bf7b2fe91c82e06618864ac3ec4d4c34 /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/msg/detection.l
+18e1c05c462c393639323131bafdb653 CMakeFiles/clean_test_results
+7bfdecf106b5043543d4e12c32a41747 vision2_ros/CMakeFiles/_vision2_ros_generate_messages_check_deps_detection
+6ef6f8a7ae414374808c40fc164d6e72 vision2_ros/CMakeFiles/vision2_ros_generate_messages_cpp
+6ef6f8a7ae414374808c40fc164d6e72 vision2_ros/CMakeFiles/vision2_ros_generate_messages_eus
+6ef6f8a7ae414374808c40fc164d6e72 vision2_ros/CMakeFiles/vision2_ros_generate_messages_lisp
+6ef6f8a7ae414374808c40fc164d6e72 vision2_ros/CMakeFiles/vision2_ros_generate_messages_nodejs
+6ef6f8a7ae414374808c40fc164d6e72 vision2_ros/CMakeFiles/vision2_ros_generate_messages_py

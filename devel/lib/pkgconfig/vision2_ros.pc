@@ -1,0 +1,8 @@
+prefix=/home/george/ros_vision/devel
+
+Name: vision2_ros
+Description: Description of vision2_ros
+Version: 0.0.0
+Cflags: -I/home/george/ros_vision/devel/include -I/home/george/ros_vision/src/vision2_ros/include
+Libs: -L/home/george/ros_vision/devel/lib -lvision2_ros
+Requires: cv_bridge roscpp rospy sensor_msgs message_generation

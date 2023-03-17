@@ -1,0 +1,6 @@
+<launch>
+<rosparam command= "load" file="$(find vision2_ros)/config/camera.yaml"></rosparam>
+
+<node pkg="tf" type="static_transform_publisher" name="camera_broadcaster" args="0 0 0.5 0 0 0 1 base_link camera_link 100" />
+
+</launch>

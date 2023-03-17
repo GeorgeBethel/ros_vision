@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/george/ros_vision/devel/setup.sh
