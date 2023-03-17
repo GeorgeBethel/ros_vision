@@ -28,6 +28,14 @@ frame_w: 640
 bbx: [359, 186, 487, 314]
 num_detection: 1
 ```
+# Topics
+
+the /camera/image/detections is the detection result topic while the /camera/image/faces is the raw image topic
+```
+/camera/image/detections
+/camera/image/faces
+```
+
 # config file
 camera.yaml
 the camera.yaml file contains the image source which is basically the webcam you want to use. change this paremeter depending on whether you are using a webcam or USB camnera
