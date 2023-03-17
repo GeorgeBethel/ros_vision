@@ -14,6 +14,20 @@ int64 frame_w  # frame width
 int64[4] bbx   # outputs an array of upper and lower bounding box of the detection. bbx[lower_left_x,lower_left_y,upper_right_x, upper_right_y]
 int64 num_detection # outputs the number of detections
 ```
+message output
+```
+header: 
+  seq: 700
+  stamp: 
+    secs: 1679090099
+    nsecs: 442188024
+  frame_id: "base_link"
+child_frame_id: "camera_link"
+frame_h: 480
+frame_w: 640
+bbx: [359, 186, 487, 314]
+num_detection: 1
+```
 # config file
 camera.yaml
 the camera.yaml file contains the image source which is basically the webcam you want to use. change this paremeter depending on whether you are using a webcam or USB camnera
