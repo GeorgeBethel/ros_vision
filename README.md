@@ -14,7 +14,7 @@ int64 frame_w  # frame width
 int64[4] bbx   # outputs an array of upper and lower bounding box of the detection. bbx[lower_left_x,lower_left_y,upper_right_x, upper_right_y]
 int64 num_detection # outputs the number of detections
 ```
-message output
+## message output
 ```
 header: 
   seq: 700
@@ -28,7 +28,7 @@ frame_w: 640
 bbx: [359, 186, 487, 314]
 num_detection: 1
 ```
-# Topics
+## Topics
 
 the /camera/image/detections is the detection result topic while the /camera/image/faces is the raw image topic
 ```
