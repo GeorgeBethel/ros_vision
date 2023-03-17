@@ -32,7 +32,7 @@ num_detection: 1
 ```
 ## Topics
 
-the /camera/image/detections is the detection result topic while the /camera/image/faces is the raw image topic
+the **/camera/image/detections** is the detection result topic while the **/camera/image/faces** is the raw image topic
 ```
 /camera/image/detections
 /camera/image/faces
