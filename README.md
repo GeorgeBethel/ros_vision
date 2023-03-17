@@ -38,3 +38,7 @@ rosrun vision2_ros detection.py
 # tf tree
 
 ![alt tf tree](https://github.com/GeorgeBethel/ros_vision/blob/main/src/vision2_ros/tf.png)
+
+# rviz camera view
+
+![alt rviz camera view](https://github.com/GeorgeBethel/ros_vision/blob/main/src/vision2_ros/rviz_cam_view.png)
