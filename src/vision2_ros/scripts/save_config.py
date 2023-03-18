@@ -28,7 +28,7 @@ def HSVCallback(data):
     high_S = data.hsv_values[4]
     high_V = data.hsv_values[5]
     
-    hsv_values = [{"hsv_val": [low_H,low_S,low_V,high_H,high_S,high_V]}]
+    hsv_values = {"low_H": low_H, "low_S":low_S, "low_V":low_V, "high_H":high_H, "high_S": high_S, "high_V":high_V}
     
     with open(r'/home/george/ros_vision/src/vision2_ros/config/hsv_setting.yaml', 'w') as file:
         documents = yaml.dump(hsv_values, file)
