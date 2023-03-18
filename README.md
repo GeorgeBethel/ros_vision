@@ -49,16 +49,34 @@ model_type: cascade_classifier # change to yolo if using yolo
 child_frame: camera_link
 parent_frame: base_link
 ```
-# launching the detection node
+## launching the detection node
 
-launch the camera.launch file so that the parameter will be loaded to the server
+Launch the camera.launch file so that the parameter will be loaded to the server
 ```
 roslaunch vision2_ros camera.launch
 ```
-launch the detection.py node to bring up the camera
+Launch the detection.py node to bring up the camera
 ```
 rosrun vision2_ros detection.py
 ```
+
+## HSV value setting
+
+To launch the HSV setting node, you have to start the camera node first
+```
+roslaunch vision2_ros camera.launch
+rosrun vision2_ros lowerUpper_HSVcolorSetting.py
+```
+## Saving the HSV settings and writting it to a config file
+Install the yaml module using the command
+```
+pip install pyyaml
+```
+Open another terminal and run the node to save the settings
+```
+rosrun vision2_ros save_config.py
+```
+
 # tf tree
 
 ![alt tf tree](https://github.com/GeorgeBethel/ros_vision/blob/main/src/vision2_ros/tf.png)
