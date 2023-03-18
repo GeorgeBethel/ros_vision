@@ -4,6 +4,21 @@ This package is created to make detection easy with openCV through ROS. it enabl
 
 In addition to detection, it also alows you to adjust HSV values and save the settings on the fly
 
+## Directories
+```
+src/
+└── vision2_ros
+    ├── config
+    ├── include
+    │   └── vision2_ros
+    ├── launch
+    ├── msg
+    ├── scripts
+    ├── src
+    └── utils
+
+```
+
 ## messages 
 
 detection.msg
