@@ -70,7 +70,7 @@ def on_high_V_thresh_trackbar(val):
 	cv2.setTrackbarPos(high_V_name, window_detection_name, high_V)
 
 
-class HSVSSetting:
+class HSVSetting:
 
 	def __init__(self):
 		self.bridge_object = CvBridge()
@@ -137,7 +137,7 @@ class HSVSSetting:
 
 
 def main():
-	HSVSSetting()
+	HSVSetting()
 
 	try:
 		rospy.spin()
