@@ -76,6 +76,21 @@ Open another terminal and run the node to save the settings
 ```
 rosrun vision2_ros save_config.py
 ```
+HSV message file
+```
+# variables to hold HSV settings
+
+int64[6] hsv_values 
+```
+HSV yaml file **hsv_settings.yaml**
+```
+high_H: 180
+high_S: 255
+high_V: 255
+low_H: 0
+low_S: 0
+low_V: 0
+```
 
 # tf tree
 
