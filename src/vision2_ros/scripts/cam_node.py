@@ -6,18 +6,25 @@ import cv2
 from cv_bridge import CvBridge, CvBridgeError
 from sensor_msgs.msg import Image
 
-cap = cv2.VideoCapture(0)
+source = rospy.get_param("image_source")
+
+cap = cv2.VideoCapture(source)
+
 bridge = CvBridge()
 
 def CamPublisher():
     
-    CamPub = rospy.Publisher("/camera/image", Image, queue_size = 10)
+    CamPub = rospy.Publisher("/camera/image/raw", Image, queue_size = 10)
     rospy.init_node("cam_node", anonymous = False)
     rate = rospy.Rate(1)
     
     if not cap.isOpened():
         
         rospy.loginfo("cannot open camera")
+    
+    elif cap.isOpened():
+        
+        rospy.loginfo("camera publishing....")
     
     while not rospy.is_shutdown():
         
