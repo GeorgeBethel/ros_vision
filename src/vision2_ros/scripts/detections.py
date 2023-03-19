@@ -7,16 +7,21 @@ from cv_bridge import CvBridge, CvBridgeError
 from sensor_msgs.msg import Image
 from vision2_ros.msg import detection
 
-source = rospy.get_param("image_source")
+# get all params needed from the parameter server
+
+source = rospy.get_param("camera_source")
 child_frame = rospy.get_param("child_frame")
 parent_frame = rospy.get_param("parent_frame")
+cascade_path = rospy.get_param("path_to_harcascade")
 
+# Start camera capture
 cap = cv2.VideoCapture(source)
 bridge = CvBridge()
 
 _detections = detection()
 
-face_cascade = cv2.CascadeClassifier('/home/george/ros_vision/src/vision2_ros/utils/haarcascade_frontalface_default.xml')
+# Read the cascade
+face_cascade = cv2.CascadeClassifier(cascade_path)
 
 def CamPublisher():
     
@@ -39,12 +44,17 @@ def CamPublisher():
         
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+        
+        # Variable to hold number of faces detected
         detection_counts = 0
         
         for (x,y,w,h) in faces:
             detection_counts += 1            
             cv2.rectangle(frame,(x,y),(x+w,y+h),(0,225,0),4)
             roi_colored = frame[y:y+h,x:x+w]
+            
+            
+            #Populate the detection massage with the position of the detection
             
             _detections.num_detection = detection_counts
             _detections.header.stamp = rospy.Time.now()
@@ -59,7 +69,11 @@ def CamPublisher():
             
         cv2.imshow("frame", frame)
         msg = bridge.cv2_to_imgmsg(frame, "bgr8")
+        
+        #Publish the image to ROS
         CamPub.publish(msg)
+        
+        #Publish detection result to ROS message 
         detection_pub.publish(_detections)
         
         if cv2.waitKey(1) & 0xFF == ord('q'):
