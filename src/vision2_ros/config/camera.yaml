@@ -1,5 +1,7 @@
 image_source: 0  # source of the image 0 for webcam, 2 for USB camera
 Detection_type: "face"  # what you want to detect. this is mostly used for cascade classifier
 model_type: cascade_classifier # change to yolo if using yolo
+path_to_weights: ""
+path_to_harcascade: "/home/george/ros_vision/src/vision2_ros/utils/haarcascade_frontalface_default.xml" # change this path to match your path
 child_frame: camera_link
 parent_frame: base_link
