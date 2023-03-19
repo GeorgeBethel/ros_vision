@@ -56,9 +56,8 @@ the **/camera/image/detections** is the detection result topic while the **/came
 ```
 
 # config file
-camera.yaml
-the camera.yaml file contains the image source which is basically the webcam you want to use. change this paremeter depending on whether you are using a webcam or USB camnera
 
+the camera.yaml file contains the image source which is basically the webcam you want to use. change this paremeter depending on whether you are using a webcam or USB camnera
 ```
 image_source: 0  # source of the image 0 for webcam, 2 for USB camera
 Detection_type: "face"  # what you want to detect. this is mostly used for cascade classifier
@@ -67,7 +66,7 @@ path_to_weights: ""
 path_to_harcascade: "/home/george/ros_vision/src/vision2_ros/utils/haarcascade_frontalface_default.xml" # change this path to match your path
 child_frame: camera_link
 parent_frame: base_link
-
+```
 ## launching the camera node
 
 Launch the camera.launch file so that the parameter will be loaded to the server
@@ -108,10 +107,10 @@ Open another terminal and run the node to save the settings
 ```
 python3 save_config.py
 ```
-HSV message file
-```
-# variables to hold HSV settings
+## HSV message file
 
+variables to hold HSV settings
+```
 int64[6] hsv_values 
 ```
 HSV yaml file **hsv_settings.yaml**
