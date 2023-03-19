@@ -121,12 +121,6 @@ class HSVSetting:
 			self.hsv_settings.hsv_values[4] = high_S
 			self.hsv_settings.hsv_values[5] = high_V
 			self.hsv_pub.publish(self.hsv_settings)
-			print("low_H", low_H)
-   			print("low_S", low_S)
-			print("low_V", low_V)
-			print("High_H", high_H)
-			print("High_S", high_S)
-			print("High_V", high_V)
    
 			cv2.waitKey(30)
 
