@@ -47,10 +47,12 @@ num_detection: 1
 ```
 ## Topics
 
-the **/camera/image/detections** is the detection result topic while the **/camera/image/faces** is the raw image topic
+the **/camera/image/detections** is the detection result topic while the **/camera/image/raw** is the raw image topic. **/camera/image/faces** is the image topic to get the face detection displayed. **/camera/image/hsv** displays the hsv values realtime
 ```
-/camera/image/detections
-/camera/image/faces
+- /camera/image/detections
+- /camera/image/faces
+- /camera/image/hsv
+- /camera/image/raw
 ```
 
 # config file
@@ -61,9 +63,23 @@ the camera.yaml file contains the image source which is basically the webcam you
 image_source: 0  # source of the image 0 for webcam, 2 for USB camera
 Detection_type: "face"  # what you want to detect. this is mostly used for cascade classifier
 model_type: cascade_classifier # change to yolo if using yolo
+path_to_weights: ""
+path_to_harcascade: "/home/george/ros_vision/src/vision2_ros/utils/haarcascade_frontalface_default.xml" # change this path to match your path
 child_frame: camera_link
 parent_frame: base_link
+
+## launching the camera node
+
+Launch the camera.launch file so that the parameter will be loaded to the server
 ```
+roslaunch vision2_ros camera.launch
+```
+Launch the camera node
+```
+rosrun cam_node.py
+```
+Once the camera node is ready change the fixed frame to base_link. Add the image in Rviz and set he image topic to /camera/image/raw
+
 ## launching the detection node
 
 Launch the camera.launch file so that the parameter will be loaded to the server
@@ -80,6 +96,7 @@ rosrun vision2_ros detection.py
 To launch the HSV setting node, you have to start the camera node first
 ```
 roslaunch vision2_ros camera.launch
+
 rosrun vision2_ros lowerUpper_HSVcolorSetting.py
 ```
 ## Saving the HSV settings and writting it to a config file
@@ -89,7 +106,7 @@ pip install pyyaml
 ```
 Open another terminal and run the node to save the settings
 ```
-rosrun vision2_ros save_config.py
+python3 save_config.py
 ```
 HSV message file
 ```
@@ -99,13 +116,19 @@ int64[6] hsv_values
 ```
 HSV yaml file **hsv_settings.yaml**
 ```
+low_H: 0
+low_S: 243
+low_V: 118
 high_H: 180
 high_S: 255
 high_V: 255
-low_H: 0
-low_S: 0
-low_V: 0
+
 ```
+## HSV value usage
+
+The package includes an example code to use the HSV values gotten. To run this, run the launch file below
+```
+roslaunch vision2_ros hsv.launch
 
 # tf tree
 
@@ -113,4 +136,4 @@ low_V: 0
 
 # rviz camera view
 
-![alt rviz camera view](https://github.com/GeorgeBethel/ros_vision/blob/main/src/vision2_ros/rviz_cam_view.png)
+![alt rviz camera view](https://github.com/GeorgeBethel/ros_vision/blob/main/src/vision2_ros/face_detected.png)
