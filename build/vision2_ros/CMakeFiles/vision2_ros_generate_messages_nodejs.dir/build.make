@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/george/ros_vision/build
 include vision2_ros/CMakeFiles/vision2_ros_generate_messages_nodejs.dir/progress.make
 
 vision2_ros/CMakeFiles/vision2_ros_generate_messages_nodejs: /home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg/detection.js
+vision2_ros/CMakeFiles/vision2_ros_generate_messages_nodejs: /home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg/HSV.js
 
 
 /home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg/detection.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
@@ -62,8 +63,14 @@ vision2_ros/CMakeFiles/vision2_ros_generate_messages_nodejs: /home/george/ros_vi
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from vision2_ros/detection.msg"
 	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/george/ros_vision/src/vision2_ros/msg/detection.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg
 
+/home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg/HSV.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg/HSV.js: /home/george/ros_vision/src/vision2_ros/msg/HSV.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from vision2_ros/HSV.msg"
+	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/george/ros_vision/src/vision2_ros/msg/HSV.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg
+
 vision2_ros_generate_messages_nodejs: vision2_ros/CMakeFiles/vision2_ros_generate_messages_nodejs
 vision2_ros_generate_messages_nodejs: /home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg/detection.js
+vision2_ros_generate_messages_nodejs: /home/george/ros_vision/devel/share/gennodejs/ros/vision2_ros/msg/HSV.js
 vision2_ros_generate_messages_nodejs: vision2_ros/CMakeFiles/vision2_ros_generate_messages_nodejs.dir/build.make
 
 .PHONY : vision2_ros_generate_messages_nodejs

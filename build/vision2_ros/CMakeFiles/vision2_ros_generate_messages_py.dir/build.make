@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/george/ros_vision/build
 include vision2_ros/CMakeFiles/vision2_ros_generate_messages_py.dir/progress.make
 
 vision2_ros/CMakeFiles/vision2_ros_generate_messages_py: /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/_detection.py
+vision2_ros/CMakeFiles/vision2_ros_generate_messages_py: /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/_HSV.py
 vision2_ros/CMakeFiles/vision2_ros_generate_messages_py: /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/__init__.py
 
 
@@ -63,13 +64,20 @@ vision2_ros/CMakeFiles/vision2_ros_generate_messages_py: /home/george/ros_vision
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG vision2_ros/detection"
 	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/george/ros_vision/src/vision2_ros/msg/detection.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg
 
+/home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/_HSV.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/_HSV.py: /home/george/ros_vision/src/vision2_ros/msg/HSV.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG vision2_ros/HSV"
+	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/george/ros_vision/src/vision2_ros/msg/HSV.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg
+
 /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/__init__.py: /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/_detection.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for vision2_ros"
+/home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/__init__.py: /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/_HSV.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for vision2_ros"
 	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg --initpy
 
 vision2_ros_generate_messages_py: vision2_ros/CMakeFiles/vision2_ros_generate_messages_py
 vision2_ros_generate_messages_py: /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/_detection.py
+vision2_ros_generate_messages_py: /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/_HSV.py
 vision2_ros_generate_messages_py: /home/george/ros_vision/devel/lib/python2.7/dist-packages/vision2_ros/msg/__init__.py
 vision2_ros_generate_messages_py: vision2_ros/CMakeFiles/vision2_ros_generate_messages_py.dir/build.make
 

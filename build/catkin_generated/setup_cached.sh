@@ -7,10 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/george/ros_vision/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/george/ros_vision/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/george/ros_vision/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/george/ros_vision/build"
-export PYTHONPATH="/home/george/ros_vision/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/george/ros_vision/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/george/ros_vision/src:$ROS_PACKAGE_PATH"

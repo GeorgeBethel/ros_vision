@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/george/ros_vision/build
 include vision2_ros/CMakeFiles/vision2_ros_generate_messages_lisp.dir/progress.make
 
 vision2_ros/CMakeFiles/vision2_ros_generate_messages_lisp: /home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg/detection.lisp
+vision2_ros/CMakeFiles/vision2_ros_generate_messages_lisp: /home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg/HSV.lisp
 
 
 /home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg/detection.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
@@ -62,8 +63,14 @@ vision2_ros/CMakeFiles/vision2_ros_generate_messages_lisp: /home/george/ros_visi
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from vision2_ros/detection.msg"
 	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/george/ros_vision/src/vision2_ros/msg/detection.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg
 
+/home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg/HSV.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg/HSV.lisp: /home/george/ros_vision/src/vision2_ros/msg/HSV.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from vision2_ros/HSV.msg"
+	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/george/ros_vision/src/vision2_ros/msg/HSV.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg
+
 vision2_ros_generate_messages_lisp: vision2_ros/CMakeFiles/vision2_ros_generate_messages_lisp
 vision2_ros_generate_messages_lisp: /home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg/detection.lisp
+vision2_ros_generate_messages_lisp: /home/george/ros_vision/devel/share/common-lisp/ros/vision2_ros/msg/HSV.lisp
 vision2_ros_generate_messages_lisp: vision2_ros/CMakeFiles/vision2_ros_generate_messages_lisp.dir/build.make
 
 .PHONY : vision2_ros_generate_messages_lisp

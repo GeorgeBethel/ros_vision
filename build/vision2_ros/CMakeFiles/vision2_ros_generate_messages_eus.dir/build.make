@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/george/ros_vision/build
 include vision2_ros/CMakeFiles/vision2_ros_generate_messages_eus.dir/progress.make
 
 vision2_ros/CMakeFiles/vision2_ros_generate_messages_eus: /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/msg/detection.l
+vision2_ros/CMakeFiles/vision2_ros_generate_messages_eus: /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/msg/HSV.l
 vision2_ros/CMakeFiles/vision2_ros_generate_messages_eus: /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/manifest.l
 
 
@@ -63,12 +64,18 @@ vision2_ros/CMakeFiles/vision2_ros_generate_messages_eus: /home/george/ros_visio
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from vision2_ros/detection.msg"
 	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/george/ros_vision/src/vision2_ros/msg/detection.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/msg
 
+/home/george/ros_vision/devel/share/roseus/ros/vision2_ros/msg/HSV.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/george/ros_vision/devel/share/roseus/ros/vision2_ros/msg/HSV.l: /home/george/ros_vision/src/vision2_ros/msg/HSV.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from vision2_ros/HSV.msg"
+	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/george/ros_vision/src/vision2_ros/msg/HSV.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/msg
+
 /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for vision2_ros"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for vision2_ros"
 	cd /home/george/ros_vision/build/vision2_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/george/ros_vision/devel/share/roseus/ros/vision2_ros vision2_ros sensor_msgs std_msgs
 
 vision2_ros_generate_messages_eus: vision2_ros/CMakeFiles/vision2_ros_generate_messages_eus
 vision2_ros_generate_messages_eus: /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/msg/detection.l
+vision2_ros_generate_messages_eus: /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/msg/HSV.l
 vision2_ros_generate_messages_eus: /home/george/ros_vision/devel/share/roseus/ros/vision2_ros/manifest.l
 vision2_ros_generate_messages_eus: vision2_ros/CMakeFiles/vision2_ros_generate_messages_eus.dir/build.make
 

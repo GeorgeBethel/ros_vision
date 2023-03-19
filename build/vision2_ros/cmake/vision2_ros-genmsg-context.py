@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/george/ros_vision/src/vision2_ros/msg/detection.msg"
+messages_str = "/home/george/ros_vision/src/vision2_ros/msg/detection.msg;/home/george/ros_vision/src/vision2_ros/msg/HSV.msg"
 services_str = ""
 pkg_name = "vision2_ros"
 dependencies_str = "sensor_msgs;std_msgs"

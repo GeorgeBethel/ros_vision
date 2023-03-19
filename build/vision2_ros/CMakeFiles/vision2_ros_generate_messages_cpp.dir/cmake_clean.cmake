@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vision2_ros_generate_messages_cpp"
   "/home/george/ros_vision/devel/include/vision2_ros/detection.h"
+  "/home/george/ros_vision/devel/include/vision2_ros/HSV.h"
 )
 
 # Per-language clean rules from dependency scanning.

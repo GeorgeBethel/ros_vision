@@ -38,7 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision2_ros/msg" TYPE FILE FILES "/home/george/ros_vision/src/vision2_ros/msg/detection.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision2_ros/msg" TYPE FILE FILES
+    "/home/george/ros_vision/src/vision2_ros/msg/detection.msg"
+    "/home/george/ros_vision/src/vision2_ros/msg/HSV.msg"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

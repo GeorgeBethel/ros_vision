@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/george/ros_vision/build
 include vision2_ros/CMakeFiles/vision2_ros_generate_messages_cpp.dir/progress.make
 
 vision2_ros/CMakeFiles/vision2_ros_generate_messages_cpp: /home/george/ros_vision/devel/include/vision2_ros/detection.h
+vision2_ros/CMakeFiles/vision2_ros_generate_messages_cpp: /home/george/ros_vision/devel/include/vision2_ros/HSV.h
 
 
 /home/george/ros_vision/devel/include/vision2_ros/detection.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
@@ -63,8 +64,15 @@ vision2_ros/CMakeFiles/vision2_ros_generate_messages_cpp: /home/george/ros_visio
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from vision2_ros/detection.msg"
 	cd /home/george/ros_vision/src/vision2_ros && /home/george/ros_vision/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/george/ros_vision/src/vision2_ros/msg/detection.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/include/vision2_ros -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/george/ros_vision/devel/include/vision2_ros/HSV.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/george/ros_vision/devel/include/vision2_ros/HSV.h: /home/george/ros_vision/src/vision2_ros/msg/HSV.msg
+/home/george/ros_vision/devel/include/vision2_ros/HSV.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/george/ros_vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from vision2_ros/HSV.msg"
+	cd /home/george/ros_vision/src/vision2_ros && /home/george/ros_vision/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/george/ros_vision/src/vision2_ros/msg/HSV.msg -Ivision2_ros:/home/george/ros_vision/src/vision2_ros/msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision2_ros -o /home/george/ros_vision/devel/include/vision2_ros -e /opt/ros/melodic/share/gencpp/cmake/..
+
 vision2_ros_generate_messages_cpp: vision2_ros/CMakeFiles/vision2_ros_generate_messages_cpp
 vision2_ros_generate_messages_cpp: /home/george/ros_vision/devel/include/vision2_ros/detection.h
+vision2_ros_generate_messages_cpp: /home/george/ros_vision/devel/include/vision2_ros/HSV.h
 vision2_ros_generate_messages_cpp: vision2_ros/CMakeFiles/vision2_ros_generate_messages_cpp.dir/build.make
 
 .PHONY : vision2_ros_generate_messages_cpp
