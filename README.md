@@ -1,6 +1,6 @@
 # ros_vision
 
-This package is created to make detection easy with openCV through ROS. it enables you to do face detection using openCV and publishes the detection results to a ROS topic. It also enables you to easily attach your camera frame on whichever parent frame you want through a convinient yaml file.
+This package is created to make detection easy with openCV through ROS. it enables you to do face detection using openCV and publishes the detection results to a ROS topic. It also enables you to easily attach your camera frame on whichever parent frame you want through a convenient yaml file.
 
 In addition to detection, it also alows you to adjust HSV values and save the settings on the fly.
 
