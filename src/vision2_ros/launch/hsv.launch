@@ -1,0 +1,13 @@
+<launch>
+
+<rosparam command= "load" file="$(find vision2_ros)/config/hsv_setting.yaml"></rosparam>
+
+<rosparam command= "load" file="$(find vision2_ros)/config/camera.yaml"></rosparam>
+
+<node name ="camera" pkg = "vision2_ros" type="cam_node.py"/>
+
+<!--uncomment out if you want to run the camera node in a single launch file with rviz-->
+
+<node name ="hsv" pkg = "vision2_ros" type="hsvUsage.py"/> 
+
+</launch>
