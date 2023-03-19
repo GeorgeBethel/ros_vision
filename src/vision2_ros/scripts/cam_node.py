@@ -6,7 +6,7 @@ import cv2
 from cv_bridge import CvBridge, CvBridgeError
 from sensor_msgs.msg import Image
 
-source = rospy.get_param("image_source")
+source = rospy.get_param("camera_source")
 
 cap = cv2.VideoCapture(source)
 
