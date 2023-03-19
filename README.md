@@ -2,7 +2,9 @@
 
 This package is created to make detection easy with openCV through ROS. it enables you to do face detection using openCV and publishes the detection results to a ROS topic. It also enables you to easily attach your camera frame on whichever parent frame you want through a convinient yaml file.
 
-In addition to detection, it also alows you to adjust HSV values and save the settings on the fly
+In addition to detection, it also alows you to adjust HSV values and save the settings on the fly.
+
+This package works pretty well in ROS 1 melodic and Noetic 
 
 ## Directories
 ```
@@ -17,6 +19,17 @@ src/
     ├── src
     └── utils
 
+```
+
+## Installing dependencies
+
+Install openCV python
+```
+pip install opencv-python
+```
+Install cv-bridge
+```
+sudo apt-get install ros-<ros1-distro>-cv-bridge
 ```
 
 ## messages 
