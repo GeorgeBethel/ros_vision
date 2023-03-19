@@ -28,10 +28,16 @@ def HSVCallback(data):
     high_S = data.hsv_values[4]
     high_V = data.hsv_values[5]
     
-    hsv_values = {"low_H": low_H, "low_S":low_S, "low_V":low_V, "high_H":high_H, "high_S": high_S, "high_V":high_V}
+    # hsv_values = {"low_H": low_H, "low_S":low_S, "low_V":low_V, "high_H":high_H, "high_S": high_S, "high_V":high_V}
+    
+    hsv_config = [low_H,low_S,low_V,high_H,high_S,high_V]
+    hsv_name = ["low_H","low_S","low_V","high_H","high_S","high_V"]
+    
+    # hsv_values = {"source": 0}
     
     with open(r'/home/george/ros_vision/src/vision2_ros/config/hsv_setting.yaml', 'w') as file:
-        documents = yaml.dump(hsv_values, file)
+        for index, value in enumerate(hsv_config):
+            documents = yaml.dump({hsv_name[index]:hsv_config[index]}, file)
 
 def saveConfig():
     rospy.Subscriber("/camera/image/hsv", HSV, HSVCallback)
