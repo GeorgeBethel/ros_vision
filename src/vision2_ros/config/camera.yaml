@@ -1,4 +1,4 @@
-image_source: 0  # source of the image 0 for webcam, 2 for USB camera
+camera_source: 0  # source of the image 0 for webcam, 2 for USB camera
 Detection_type: "face"  # what you want to detect. this is mostly used for cascade classifier
 model_type: cascade_classifier # change to yolo if using yolo
 path_to_weights: ""
