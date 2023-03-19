@@ -149,3 +149,7 @@ roslaunch vision2_ros hsv.launch
 # rviz camera view
 
 ![alt rviz camera view](https://github.com/GeorgeBethel/ros_vision/blob/main/src/vision2_ros/face_detected.png)
+
+# HSV usage
+
+![alt rviz camera view](https://github.com/GeorgeBethel/ros_vision/blob/main/src/vision2_ros/hsv_settings2.png)
