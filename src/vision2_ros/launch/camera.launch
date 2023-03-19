@@ -1,5 +1,16 @@
 <launch>
+
 <rosparam command= "load" file="$(find vision2_ros)/config/camera.yaml"></rosparam>
+
+<!--uncomment out if you want to run the camera node in a single launch file with rviz-->
+
+<!--node name ="camera" pkg = "vision2_ros" type="cam_node.py"/-->
+
+<!--uncomment to launch detection node in a single launch file with rviz-->
+
+<!--node name ="face_detection" pkg = "vision2_ros" type="detections.py"/--> 
+
+<node name="rviz" pkg="rviz" type="rviz"/>
 
 <node pkg="tf" type="static_transform_publisher" name="camera_broadcaster" args="0 0 0.5 0 0 0 1 base_link camera_link 100" />
 
