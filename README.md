@@ -88,7 +88,7 @@ roslaunch vision2_ros camera.launch
 ```
 Launch the camera node
 ```
-rosrun cam_node.py
+rosrun vision2_ros cam_node.py
 ```
 Once the camera node is ready change the fixed frame to base_link. Add the image in Rviz and set he image topic to /camera/image/raw
 
